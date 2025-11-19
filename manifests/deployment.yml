@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: singhkumarvimalnewakspipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: singhkumarvimalnewakspipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: singhkumarvimalnewakspipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: singhkumarvimalnewakspipelinesjavascriptdocker 
+          image: aakkssreg.azurecr.io/singhkumarvimalnewakspipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
